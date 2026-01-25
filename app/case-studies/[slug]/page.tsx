@@ -94,6 +94,15 @@ export default async function CaseStudyPage({ params }: PageProps) {
           </section>
         )}
 
+        <section className="case-study-cta" style={{ padding: 'var(--space-lg) var(--space-md)', textAlign: 'center', background: 'var(--color-paper-warm)' }}>
+          <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+            <p style={{ fontSize: '1.1rem', color: 'var(--color-ink-light)', marginBottom: 'var(--space-md)' }}>
+              Want to learn more about my approach? Read my <Link href="/about" style={{ color: 'var(--color-ink)', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>story</Link> or check out my <Link href="/speaking" style={{ color: 'var(--color-ink)', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>speaking engagements</Link>.
+            </p>
+            <Link href="/contact" style={{ display: 'inline-block', padding: '0.85rem 2rem', background: 'var(--color-ink)', color: 'var(--color-paper)', borderRadius: '6px', fontSize: '1rem', textDecoration: 'none' }}>Get in touch</Link>
+          </div>
+        </section>
+
         <nav className="case-study-nav">
           <div className="case-study-nav-inner">
             {prevStudy ? (

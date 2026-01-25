@@ -44,12 +44,12 @@ const webinars = [
 ]
 
 const topics = [
-  { title: 'AI & Answer Engine Optimization', description: 'How to position your brand for visibility in AI-generated answers. The shift from ranking to being cited.' },
-  { title: 'Enterprise SEO at Scale', description: 'Building SEO programs for large organizations. Data infrastructure, team structure, cross-functional alignment.' },
-  { title: 'Growth Strategy for B2B SaaS', description: 'Turning organic and paid into a unified acquisition system. Product-led content, marketplace platforms, international expansion.' },
-  { title: 'AI-Powered Marketing Operations', description: 'Building AI workflows that actually work. Custom GPTs, automation, increasing team velocity without sacrificing quality.' },
-  { title: 'Leadership & Team Building', description: 'Scaling teams from 1 to 25+. Hiring, mentoring, creating cultures of ownership and continuous improvement.' },
-  { title: 'Board-Level Communication', description: 'How to present growth strategy to executives and boards. Translating SEO into business outcomes and securing resources.' },
+  { title: 'AI & Answer Engine Optimization', description: 'How to position your brand for visibility in AI-generated answers. The shift from ranking to being cited.', link: null },
+  { title: 'Enterprise SEO at Scale', description: 'Building SEO programs for large organizations. Data infrastructure, team structure, cross-functional alignment.', link: '/case-studies/newfold-search-infrastructure' },
+  { title: 'Growth Strategy for B2B SaaS', description: 'Turning organic and paid into a unified acquisition system. Product-led content, marketplace platforms, international expansion.', link: '/case-studies/freshbooks-organic-growth' },
+  { title: 'AI-Powered Marketing Operations', description: 'Building AI workflows that actually work. Custom GPTs, automation, increasing team velocity without sacrificing quality.', link: '/case-studies/newfold-search-infrastructure' },
+  { title: 'Leadership & Team Building', description: 'Scaling teams from 1 to 25+. Hiring, mentoring, creating cultures of ownership and continuous improvement.', link: '/work' },
+  { title: 'Board-Level Communication', description: 'How to present growth strategy to executives and boards. Translating SEO into business outcomes and securing resources.', link: null },
 ]
 
 export default function Speaking() {
@@ -61,7 +61,7 @@ export default function Speaking() {
         {/* Page Header */}
         <header className="page-header">
           <h1 className="page-title">Speaking & Media</h1>
-          <p className="page-intro">I speak at conferences, host webinars, appear on podcasts, and teach courses on SEO, growth strategy, and AI in marketing.</p>
+          <p className="page-intro">I speak at conferences, host webinars, appear on podcasts, and teach courses on SEO, <Link href="/work" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>growth strategy</Link>, and AI in marketing.</p>
         </header>
 
         {/* Webinars & Talks */}
@@ -124,12 +124,24 @@ export default function Speaking() {
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, marginBottom: 'var(--space-sm)', opacity: 0.9 }}>Topics I speak on</h2>
             <p style={{ fontSize: '1.1rem', opacity: 0.7, marginBottom: 'var(--space-lg)', maxWidth: '600px' }}>These are the areas where I have the most depth and can provide actionable insights.</p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-md)' }}>
-              {topics.map((topic, index) => (
-                <div key={index} style={{ padding: 'var(--space-md)', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 400, marginBottom: 'var(--space-xs)' }}>{topic.title}</h3>
-                  <p style={{ fontSize: '0.9rem', opacity: 0.7, lineHeight: 1.6 }}>{topic.description}</p>
-                </div>
-              ))}
+              {topics.map((topic, index) => {
+                const content = (
+                  <>
+                    <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 400, marginBottom: 'var(--space-xs)' }}>{topic.title}</h3>
+                    <p style={{ fontSize: '0.9rem', opacity: 0.7, lineHeight: 1.6 }}>{topic.description}</p>
+                    {topic.link && <span style={{ fontSize: '0.85rem', opacity: 0.6, marginTop: 'var(--space-xs)', display: 'block' }}>See case study →</span>}
+                  </>
+                );
+                return topic.link ? (
+                  <Link key={index} href={topic.link} style={{ padding: 'var(--space-md)', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s ease' }}>
+                    {content}
+                  </Link>
+                ) : (
+                  <div key={index} style={{ padding: 'var(--space-md)', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                    {content}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

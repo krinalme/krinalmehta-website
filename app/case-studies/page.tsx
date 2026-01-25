@@ -18,7 +18,7 @@ export default function CaseStudies() {
           <h1 className="page-title">Case Studies</h1>
           <p className="page-intro">
             Deep dives into how I've built growth systems at scale. Each case study covers the challenge,
-            strategic approach, and measurable results delivered.
+            strategic approach, and measurable results delivered. See my <Link href="/work" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>full work history</Link> for more context.
           </p>
         </header>
 

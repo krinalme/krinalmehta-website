@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -16,7 +17,7 @@ export default function Contact() {
         <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'var(--space-xl) var(--space-md)', paddingTop: 'calc(var(--space-xl) + 60px)' }}>
           <div style={{ maxWidth: '600px', textAlign: 'center' }}>
             <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontWeight: 400, lineHeight: 1.1, letterSpacing: '-0.03em', marginBottom: 'var(--space-md)' }}>Let's connect</h1>
-            <p style={{ fontSize: '1.15rem', color: 'var(--color-ink-light)', lineHeight: 1.7, marginBottom: 'var(--space-lg)' }}>The best way to reach me is on LinkedIn or via email. I typically respond within a few days.</p>
+            <p style={{ fontSize: '1.15rem', color: 'var(--color-ink-light)', lineHeight: 1.7, marginBottom: 'var(--space-lg)' }}>The best way to reach me is on LinkedIn or via email. I typically respond within a few days. Want to learn more first? Check out my <Link href="/work" style={{ color: 'var(--color-ink)', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>work history</Link> or <Link href="/case-studies" style={{ color: 'var(--color-ink)', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>case studies</Link>.</p>
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-sm)', alignItems: 'center' }}>
               <a 

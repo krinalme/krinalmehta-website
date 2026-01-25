@@ -16,11 +16,11 @@ export default function Home() {
               <p className="hero-eyebrow">Growth Leader · Toronto, Canada</p>
               <h1 className="hero-title">Building <em>growth engines</em> at multi-billion dollar scale</h1>
               <p className="hero-description">
-                I'm a full-stack growth operator with 17 years turning organic, paid, and partnerships into a company's most powerful acquisition channel. Currently leading growth across Bluehost, HostGator, and Yoast at Newfold Digital.
+                I'm a full-stack growth operator with <Link href="/about" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>17 years</Link> turning organic, paid, and partnerships into a company's most powerful acquisition channel. Currently leading growth across Bluehost, HostGator, and Yoast at Newfold Digital.
               </p>
               <div className="hero-meta">
-                <span className="hero-meta-item">Director of SEO, Newfold Digital</span>
-                <span className="hero-meta-item">Former Global SEO Lead, FreshBooks</span>
+                <Link href="/work" className="hero-meta-item" style={{ textDecoration: 'none', color: 'inherit' }}>Director of SEO, Newfold Digital</Link>
+                <Link href="/case-studies/freshbooks-organic-growth" className="hero-meta-item" style={{ textDecoration: 'none', color: 'inherit' }}>Former Global SEO Lead, FreshBooks</Link>
               </div>
             </div>
             <div className="hero-image">
@@ -66,36 +66,36 @@ export default function Home() {
               <p className="proof-subtitle">A few highlights from building growth systems at scale.</p>
             </div>
             <div className="proof-grid">
-              <div className="proof-card">
+              <Link href="/case-studies/freshbooks-organic-growth" className="proof-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="proof-card-stat">$30M</div>
                 <div className="proof-card-label">ARR from Organic</div>
                 <p className="proof-card-context">Scaled organic search from #3 to #1 revenue channel at FreshBooks in 2021.</p>
-              </div>
-              <div className="proof-card">
+              </Link>
+              <Link href="/case-studies/freshbooks-organic-growth" className="proof-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="proof-card-stat">400%</div>
                 <div className="proof-card-label">Traffic Growth</div>
                 <p className="proof-card-context">Grew organic traffic 4X through product-led content strategy at FreshBooks.</p>
-              </div>
-              <div className="proof-card">
+              </Link>
+              <Link href="/case-studies/newfold-search-infrastructure" className="proof-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="proof-card-stat">20X</div>
                 <div className="proof-card-label">Query Visibility</div>
                 <p className="proof-card-context">Built search data infrastructure expanding visibility from 200K to 4M queries at Bluehost.</p>
-              </div>
-              <div className="proof-card">
+              </Link>
+              <Link href="/work" className="proof-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="proof-card-stat">29</div>
                 <div className="proof-card-label">Team Members</div>
                 <p className="proof-card-context">Leading a global cross-functional team of SEOs, data analysts, content marketers, and developers.</p>
-              </div>
-              <div className="proof-card">
+              </Link>
+              <Link href="/case-studies/newfold-search-infrastructure" className="proof-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="proof-card-stat">70%</div>
                 <div className="proof-card-label">Time Reduction</div>
                 <p className="proof-card-context">Architected AI-powered content operations increasing velocity 4X at Bluehost.</p>
-              </div>
-              <div className="proof-card">
+              </Link>
+              <Link href="/case-studies/freshbooks-organic-growth" className="proof-card" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="proof-card-stat">7</div>
                 <div className="proof-card-label">Markets Launched</div>
                 <p className="proof-card-context">Implemented geo-targeted systems across international markets with 30% conversion lift.</p>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

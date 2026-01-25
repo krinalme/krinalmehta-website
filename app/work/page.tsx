@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -16,7 +17,7 @@ export default function Work() {
         {/* Page Header */}
         <header className="page-header">
           <h1 className="page-title">Work</h1>
-          <p className="page-intro">17 years building growth systems at scale. From hands-on execution to leading global teams across organic, paid, and partnerships.</p>
+          <p className="page-intro"><Link href="/about" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>17 years</Link> building growth systems at scale. From hands-on execution to leading global teams across organic, paid, and partnerships.</p>
         </header>
 
         {/* Roles */}
@@ -44,14 +45,14 @@ export default function Work() {
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', lineHeight: 1, marginBottom: '0.25rem' }}>29</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--color-ink-muted)' }}>Team members</div>
                   </div>
-                  <div style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px' }}>
+                  <Link href="/case-studies/newfold-search-infrastructure" style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', lineHeight: 1, marginBottom: '0.25rem' }}>20X</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--color-ink-muted)' }}>Query visibility</div>
-                  </div>
-                  <div style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px' }}>
+                  </Link>
+                  <Link href="/case-studies/newfold-search-infrastructure" style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', lineHeight: 1, marginBottom: '0.25rem' }}>4X</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--color-ink-muted)' }}>Content velocity</div>
-                  </div>
+                  </Link>
                 </div>
                 
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 400, marginBottom: 'var(--space-sm)', marginTop: 'var(--space-md)' }}>What I built</h3>
@@ -77,14 +78,14 @@ export default function Work() {
                 <p style={{ fontSize: '1rem', color: 'var(--color-ink-light)', lineHeight: 1.7, marginBottom: 'var(--space-sm)' }}>Transform organic search from a supporting channel into the primary revenue driver for a B2B SaaS accounting platform operating in 160+ countries.</p>
                 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-sm)', margin: 'var(--space-md) 0' }}>
-                  <div style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px' }}>
+                  <Link href="/case-studies/freshbooks-organic-growth" style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', lineHeight: 1, marginBottom: '0.25rem' }}>$30M</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--color-ink-muted)' }}>ARR from organic</div>
-                  </div>
-                  <div style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px' }}>
+                  </Link>
+                  <Link href="/case-studies/freshbooks-organic-growth" style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px', textDecoration: 'none', color: 'inherit' }}>
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', lineHeight: 1, marginBottom: '0.25rem' }}>400%</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--color-ink-muted)' }}>Traffic growth</div>
-                  </div>
+                  </Link>
                   <div style={{ padding: 'var(--space-sm)', background: 'var(--color-paper-warm)', borderRadius: '6px' }}>
                     <div style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', lineHeight: 1, marginBottom: '0.25rem' }}>1→8</div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--color-ink-muted)' }}>Team growth</div>
@@ -135,7 +136,10 @@ export default function Work() {
                 <p style={{ fontSize: '1.05rem', lineHeight: 1.8, opacity: 0.85, marginBottom: 'var(--space-md)' }}>When I joined FreshBooks, keeping tabs on a site with thousands of pages across multiple stakeholders was nearly impossible. I implemented Conductor Website Monitoring to create real-time visibility into site changes and SEO issues.</p>
                 <p style={{ fontSize: '1.05rem', lineHeight: 1.8, opacity: 0.85, marginBottom: 'var(--space-md)' }}>The system caught critical issues before they impacted rankings: accidentally no-indexed pages, missing H1 tags, deleted content, broken analytics tags. Beyond firefighting, we used it to establish "The Web Council," a cross-functional committee enforcing SEO governance across the organization.</p>
                 <p style={{ fontSize: '1.05rem', lineHeight: 1.8, opacity: 0.85, marginBottom: 'var(--space-md)' }}>The result? Traffic that was NOT lost. Issues caught in hours instead of weeks. A culture of SEO awareness across engineering, content, and product teams.</p>
-                <a href="https://www.conductor.com/customer-stories/freshbooks/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-paper)', fontSize: '0.95rem', opacity: 0.8 }}>Read the full case study on Conductor →</a>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <Link href="/case-studies/freshbooks-seo-governance" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-paper)', fontSize: '0.95rem', opacity: 0.9 }}>Read the detailed case study →</Link>
+                  <a href="https://www.conductor.com/customer-stories/freshbooks/" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--color-paper)', fontSize: '0.95rem', opacity: 0.7 }}>View on Conductor →</a>
+                </div>
               </div>
               <div style={{ padding: 'var(--space-md)', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', borderLeft: '3px solid rgba(255,255,255,0.3)', alignSelf: 'start' }}>
                 <p style={{ fontSize: '1rem', lineHeight: 1.7, fontStyle: 'italic', opacity: 0.9, marginBottom: 'var(--space-sm)' }}>"The value that we've received in the first few months pays for the platform several times over. Not to mention the ability to set up entirely new internal processes, workflows, reporting, and improved communication between teams."</p>
