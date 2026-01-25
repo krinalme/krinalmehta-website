@@ -56,7 +56,7 @@ export default function Speaking() {
   return (
     <>
       <Navigation />
-      
+
       <main id="main-content">
         {/* Page Header */}
         <header className="page-header">
@@ -68,29 +68,22 @@ export default function Speaking() {
         <section style={{ padding: 'var(--space-lg) var(--space-md)' }}>
           <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', fontWeight: 400, marginBottom: 'var(--space-md)' }}>Webinars & Talks</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: 'var(--space-md)' }}>
+            <div className="speaking-grid">
               {webinars.map((item, index) => (
-                <a 
+                <a
                   key={index}
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ 
-                    display: 'block',
-                    padding: 'var(--space-md)', 
-                    background: 'var(--color-paper)', 
-                    border: '1px solid rgba(0,0,0,0.06)', 
-                    borderRadius: '8px',
-                    transition: 'all 0.2s ease'
-                  }}
+                  className="speaking-card"
                 >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-sm)' }}>
-                    <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-ink-muted)' }}>{item.venue}</span>
-                    <span style={{ fontSize: '0.75rem', padding: '0.25rem 0.5rem', background: 'var(--color-paper-warm)', borderRadius: '4px', color: 'var(--color-ink-muted)' }}>{item.type}</span>
+                  <div className="speaking-card-header">
+                    <span className="speaking-card-venue">{item.venue}</span>
+                    <span className="speaking-card-type">{item.type}</span>
                   </div>
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', lineHeight: 1.3, marginBottom: 'var(--space-xs)' }}>{item.title}</h3>
-                  <p style={{ fontSize: '0.95rem', color: 'var(--color-ink-light)', lineHeight: 1.6, marginBottom: 'var(--space-sm)' }}>{item.description}</p>
-                  <span style={{ fontSize: '0.9rem', color: 'var(--color-accent)' }}>{item.linkText} →</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <span className="speaking-card-link">{item.linkText} →</span>
                 </a>
               ))}
             </div>
@@ -101,18 +94,18 @@ export default function Speaking() {
         <section style={{ padding: 'var(--space-lg) var(--space-md)', background: 'var(--color-paper-warm)' }}>
           <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', fontWeight: 400, marginBottom: 'var(--space-md)' }}>Teaching & Training</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: 'var(--space-md)' }}>
-              <div style={{ padding: 'var(--space-md)', background: 'var(--color-paper)', borderRadius: '8px' }}>
-                <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-xs)' }}>BrainStation</p>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', marginBottom: 'var(--space-xs)' }}>Lead Instructor, Search Engine Marketing</h3>
+            <div className="speaking-grid">
+              <div className="speaking-card" style={{ background: 'var(--color-paper)' }}>
+                <p className="speaking-card-venue" style={{ marginBottom: 'var(--space-xs)' }}>BrainStation</p>
+                <h3>Lead Instructor, Search Engine Marketing</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-sm)' }}>2021 – 2022</p>
-                <p style={{ fontSize: '0.95rem', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>Taught SEO, SEM, and Google Analytics courses to senior industry professionals transitioning into digital marketing or deepening their expertise.</p>
+                <p>Taught SEO, SEM, and Google Analytics courses to senior industry professionals transitioning into digital marketing or deepening their expertise.</p>
               </div>
-              <div style={{ padding: 'var(--space-md)', background: 'var(--color-paper)', borderRadius: '8px' }}>
-                <p style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-xs)' }}>IAB Canada</p>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', marginBottom: 'var(--space-xs)' }}>SEO Trainer</h3>
+              <div className="speaking-card" style={{ background: 'var(--color-paper)' }}>
+                <p className="speaking-card-venue" style={{ marginBottom: 'var(--space-xs)' }}>IAB Canada</p>
+                <h3>SEO Trainer</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-sm)' }}>2020 – 2021</p>
-                <p style={{ fontSize: '0.95rem', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>Recognized as a SEM subject matter expert by the Interactive Advertising Bureau to train marketing leaders from Canada's top enterprise brands.</p>
+                <p>Recognized as a SEM subject matter expert by the Interactive Advertising Bureau to train marketing leaders from Canada's top enterprise brands.</p>
               </div>
             </div>
           </div>
@@ -123,21 +116,21 @@ export default function Speaking() {
           <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, marginBottom: 'var(--space-sm)', opacity: 0.9 }}>Topics I speak on</h2>
             <p style={{ fontSize: '1.1rem', opacity: 0.7, marginBottom: 'var(--space-lg)', maxWidth: '600px' }}>These are the areas where I have the most depth and can provide actionable insights.</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-md)' }}>
+            <div className="speaking-topics-grid">
               {topics.map((topic, index) => {
                 const content = (
                   <>
-                    <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 400, marginBottom: 'var(--space-xs)' }}>{topic.title}</h3>
-                    <p style={{ fontSize: '0.9rem', opacity: 0.7, lineHeight: 1.6 }}>{topic.description}</p>
-                    {topic.link && <span style={{ fontSize: '0.85rem', opacity: 0.6, marginTop: 'var(--space-xs)', display: 'block' }}>See case study →</span>}
+                    <h3>{topic.title}</h3>
+                    <p>{topic.description}</p>
+                    {topic.link && <span className="speaking-topic-link">See case study →</span>}
                   </>
                 );
                 return topic.link ? (
-                  <Link key={index} href={topic.link} style={{ padding: 'var(--space-md)', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', textDecoration: 'none', color: 'inherit', transition: 'background 0.2s ease' }}>
+                  <Link key={index} href={topic.link} className="speaking-topic">
                     {content}
                   </Link>
                 ) : (
-                  <div key={index} style={{ padding: 'var(--space-md)', background: 'rgba(255,255,255,0.05)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }}>
+                  <div key={index} className="speaking-topic">
                     {content}
                   </div>
                 );

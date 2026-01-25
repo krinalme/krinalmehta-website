@@ -9,11 +9,21 @@ export const metadata: Metadata = {
   description: '17 years building growth engines at scale. From hands-on SEO specialist to leading global teams across organic, paid, and partnerships at multi-billion dollar companies.',
 }
 
+const timeline = [
+  { date: '2024 – Present', title: 'Director of SEO', company: 'Newfold Digital (Bluehost, HostGator, Yoast)', description: 'Leading a global team of 29 across SEO, data analytics, content marketing, and development. Built search data infrastructure expanding query visibility 20X. Architected AI-powered content operations increasing velocity 4X.' },
+  { date: '2020 – 2024', title: 'Global SEO Lead', company: 'FreshBooks', description: 'Grew team from 1 to 8. Scaled organic from #3 to #1 revenue channel, contributing $30M ARR in 2021. Built the Accountants Directory marketplace from concept to launch. Expanded into 7 international markets with 30% conversion lift.' },
+  { date: '2019 – 2021', title: 'Account Manager, B2B SEO & PPC', company: 'Search Engine People', description: 'Managed growth for enterprise clients including G Adventures, PwC, OpenText, ProntoForms, and York University at one of Canada\'s largest digital marketing agencies.' },
+  { date: '2017 – 2019', title: 'Founder & Chief Growth Officer', company: 'Growth Dot Digital', description: 'Founded and scaled a digital growth consultancy, achieving 500% revenue growth in two years. Consulted for startups and growth-stage companies across North America and India.' },
+  { date: '2017', title: 'Co-Founder', company: 'Squid Sense', description: 'Co-founded an AI-native startup generating automated insights from Google Analytics data. Secured seed funding from the Government of Gujarat and incubated at GLS Leaf Ahmedabad. Google launched the same concept six months later as "Insights" inside Google Analytics.' },
+  { date: '2011 – 2016', title: 'Digital Marketing Manager', company: 'Search Results Media', description: 'Led a 12-member team managing 300+ clients across US, Canada, and UK. Built a custom B2B distribution CRM for a global refrigerant company from conception to launch.' },
+  { date: '2008 – 2011', title: 'Early career', company: 'Various roles', description: 'Started in SEO as a specialist, learning the craft through hands-on execution. Progressed through roles in business development and software division management, building a foundation in technical, client, and business operations.' },
+]
+
 export default function About() {
   return (
     <>
       <Navigation />
-      
+
       <main id="main-content">
         {/* Page Header */}
         <header className="page-header with-image">
@@ -35,19 +45,19 @@ export default function About() {
         {/* Story */}
         <section className="content-section prose" style={{ padding: 'var(--space-lg) var(--space-md)', maxWidth: 'var(--max-width-prose)', margin: '0 auto' }}>
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}>Today, the answer lies at the intersection of data science, AI, and a deep understanding of the buyer journey. But I didn't start there.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}>I started in 2008 in Ahmedabad, India. Hands on keyboards, learning SEO by doing SEO. Running campaigns, managing clients, figuring out what actually moved the needle versus what just looked good in reports.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}>But even before that, I was deep in computer science. I studied at the graduate level: operating systems, assembly language, system architecture, database design. That technical foundation shapes everything about how I approach growth today. I can speak to engineering teams in their language, understand how systems actually work under the hood, and now, how AI and ML systems process and surface information. Most growth leaders can't do that.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}>Over the years, I moved from execution to strategy, from individual contributor to team leader, from agency to in-house. Each step taught me something different. Agencies taught me speed and client management. In-house taught me depth, patience, and how to align growth with business strategy.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}><strong style={{ color: 'var(--color-ink)', fontWeight: 500 }}>The pivotal shift came when I realized that SEO wasn't just a marketing channel. It was a growth system.</strong> One that, when built right, compounds over time and becomes a company's most defensible competitive advantage.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}>That insight changed how I approach the work. I stopped thinking like an SEO and started thinking like a growth operator. I learned paid media so I could understand the full acquisition picture. I learned data infrastructure so I could build systems that scale. I learned how to communicate with boards and C-suites so I could secure the resources to do ambitious work.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8, marginBottom: 'var(--space-md)' }}>I've also lived the founder life. In 2017, I co-founded Squid Sense, an AI-native startup that generated automated insights from Google Analytics data. We secured seed funding from the Government of Gujarat and had angel investment approved. Within six months, Google launched the same concept for free, literally calling it "Insights" inside Google Analytics. We were ahead of the market. That experience taught me what it actually feels like to build something from zero, and it means I can relate to founders in a way that most operators can't.</p>
-          
+
           <p style={{ fontSize: '1.05rem', color: 'var(--color-ink-light)', lineHeight: 1.8 }}>Today, I <Link href="/work" style={{ color: 'var(--color-ink)', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>lead growth across Bluehost, HostGator, and Yoast at Newfold Digital</Link>, a portfolio of brands that powers millions of websites worldwide. Before that, I spent four years at FreshBooks scaling organic from the #3 revenue channel to #1, <Link href="/case-studies/freshbooks-organic-growth" style={{ color: 'var(--color-ink)', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.3)', textUnderlineOffset: '3px' }}>contributing $30M in ARR</Link>.</p>
         </section>
 
@@ -55,7 +65,7 @@ export default function About() {
         <section style={{ padding: 'var(--space-xl) var(--space-md)', background: 'var(--color-paper-warm)' }}>
           <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, letterSpacing: '-0.02em', marginBottom: 'var(--space-lg)' }}>How I think about growth</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-md)' }}>
+            <div className="about-philosophy-grid">
               <div style={{ padding: 'var(--space-md)', background: 'var(--color-paper)', borderRadius: '8px' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', fontWeight: 400, marginBottom: 'var(--space-sm)' }}>Build data infrastructure first</h3>
                 <p style={{ fontSize: '0.95rem', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>You can't optimize what you can't measure. Before tactics, I build systems that give teams visibility into what's actually happening and the ability to act on it.</p>
@@ -77,21 +87,13 @@ export default function About() {
           <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, letterSpacing: '-0.02em', marginBottom: 'var(--space-lg)' }}>The path here</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)' }}>
-              {[
-                { date: '2024 – Present', title: 'Director of SEO', company: 'Newfold Digital (Bluehost, HostGator, Yoast)', description: 'Leading a global team of 29 across SEO, data analytics, content marketing, and development. Built search data infrastructure expanding query visibility 20X. Architected AI-powered content operations increasing velocity 4X.' },
-                { date: '2020 – 2024', title: 'Global SEO Lead', company: 'FreshBooks', description: 'Grew team from 1 to 8. Scaled organic from #3 to #1 revenue channel, contributing $30M ARR in 2021. Built the Accountants Directory marketplace from concept to launch. Expanded into 7 international markets with 30% conversion lift.' },
-                { date: '2019 – 2021', title: 'Account Manager, B2B SEO & PPC', company: 'Search Engine People', description: 'Managed growth for enterprise clients including G Adventures, PwC, OpenText, ProntoForms, and York University at one of Canada\'s largest digital marketing agencies.' },
-                { date: '2017 – 2019', title: 'Founder & Chief Growth Officer', company: 'Growth Dot Digital', description: 'Founded and scaled a digital growth consultancy, achieving 500% revenue growth in two years. Consulted for startups and growth-stage companies across North America and India.' },
-                { date: '2017', title: 'Co-Founder', company: 'Squid Sense', description: 'Co-founded an AI-native startup generating automated insights from Google Analytics data. Secured seed funding from the Government of Gujarat and incubated at GLS Leaf Ahmedabad. Google launched the same concept six months later as "Insights" inside Google Analytics.' },
-                { date: '2011 – 2016', title: 'Digital Marketing Manager', company: 'Search Results Media', description: 'Led a 12-member team managing 300+ clients across US, Canada, and UK. Built a custom B2B distribution CRM for a global refrigerant company from conception to launch.' },
-                { date: '2008 – 2011', title: 'Early career', company: 'Various roles', description: 'Started in SEO as a specialist, learning the craft through hands-on execution. Progressed through roles in business development and software division management, building a foundation in technical, client, and business operations.' },
-              ].map((item, index) => (
-                <div key={index} style={{ display: 'grid', gridTemplateColumns: '180px 1fr', gap: 'var(--space-md)', paddingBottom: 'var(--space-md)', borderBottom: index < 6 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>
-                  <div style={{ fontSize: '0.9rem', color: 'var(--color-ink-muted)', paddingTop: '0.2rem' }}>{item.date}</div>
-                  <div>
-                    <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.35rem', fontWeight: 400, marginBottom: '0.25rem' }}>{item.title}</h3>
-                    <p style={{ fontSize: '0.95rem', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-sm)' }}>{item.company}</p>
-                    <p style={{ fontSize: '0.95rem', color: 'var(--color-ink-light)', lineHeight: 1.6 }}>{item.description}</p>
+              {timeline.map((item, index) => (
+                <div key={index} className="about-timeline-item" style={{ borderBottom: index < timeline.length - 1 ? '1px solid rgba(0,0,0,0.06)' : 'none' }}>
+                  <div className="about-timeline-date">{item.date}</div>
+                  <div className="about-timeline-content">
+                    <h3>{item.title}</h3>
+                    <p className="company">{item.company}</p>
+                    <p>{item.description}</p>
                   </div>
                 </div>
               ))}
