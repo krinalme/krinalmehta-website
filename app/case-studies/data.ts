@@ -112,6 +112,33 @@ export const caseStudies: CaseStudy[] = [
       role: 'SEO/GEO Strategies',
     },
   },
+  {
+    slug: 'mena-international-architecture',
+    company: 'National Electronics Retailer (MENA)',
+    title: 'Scaling Revenue 900% by Solving International Architecture',
+    description: 'How architectural unification and executive alignment fixed a "triple-split" index problem to unlock 225K pages and drive 900% revenue growth.',
+    timeframe: '2019',
+    role: 'Growth Consultant',
+    metrics: [
+      { value: '900%', label: 'Revenue Growth' },
+      { value: '225K', label: 'Pages Indexed' },
+      { value: '5.8X', label: 'Index Expansion' },
+    ],
+    tags: ['International SEO', 'Technical Architecture', 'E-commerce', 'MENA'],
+    challenge: 'A leading electronics retailer in the MENA region had spent 12 months with a previous agency trying to solve a critical visibility crisis. Despite having massive inventory, their indexation was capped at ~39,000 URLs. The problem was a fractured architecture that split their authority into three competing buckets: the English root domain (~13k indexed), an English duplicate subdirectory /en-en/ (~13k indexed), and the Arabic version /ar/ (~13k indexed). Googlebot was confused—treating the /en-en/ subdirectory as a separate site, cannibalizing the root domain, while the Arabic version fought for crawl budget against two English duplicates.',
+    approach: [
+      'Identified that the /en-en/ subdirectory was a legacy artifact serving no user purpose but diluting 50% of English signals. Removed it entirely and implemented 301 redirects for all 13,000 URLs to their root counterparts.',
+      'Implemented granular Language + Category sitemaps (e.g., sitemap-en-laptops.xml, sitemap-ar-laptops.xml) to force targeted re-crawling and pinpoint specific indexation gaps—revealing that while English pages recovered, specific Arabic categories remained blocked by legacy render issues.',
+      'Bypassed marketing management and pitched directly to the CTO and CEO, reframing the technical problem as "Inventory Efficiency": "We are paying to host 100% of our inventory, but Google is only selling 30% of it. This fix unlocks the other 70%."',
+      'Secured immediate engineering resource allocation by demonstrating the business case in executive-friendly terms, treating the fix as a migration requiring dedicated development capacity.',
+    ],
+    results: [
+      'Expanded indexed pages from ~39,000 (fractured) to 225,000 (unified)—a 5.8X increase',
+      'Achieved 900% revenue growth within 6 months of implementation',
+      'Transformed crawl efficiency from low (duplicate loops) to high (clean signals)',
+      'Solved a complex international SEO conflict that a previous agency couldn\'t fix in 12 months',
+    ],
+  },
 ]
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {
