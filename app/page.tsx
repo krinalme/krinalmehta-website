@@ -52,6 +52,8 @@ export default function Home() {
               <span className="brand-item">FreshBooks</span>
               <span className="brand-item">PwC</span>
               <span className="brand-item">OpenText</span>
+              <span className="brand-item">York University</span>
+              <span className="brand-item">ProntoForms</span>
             </div>
           </div>
         </section>

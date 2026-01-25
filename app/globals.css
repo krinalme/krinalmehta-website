@@ -583,7 +583,7 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-lg);
-  align-items: end;
+  align-items: center;
 }
 
 .page-title {
