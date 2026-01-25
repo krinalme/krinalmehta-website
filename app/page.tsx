@@ -100,6 +100,42 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Case Studies Preview */}
+        <section className="case-studies-preview">
+          <div className="case-studies-preview-inner">
+            <div className="case-studies-preview-header">
+              <h2 className="case-studies-preview-title">Case Studies</h2>
+              <Link href="/case-studies" className="case-studies-preview-link">View all →</Link>
+            </div>
+            <div className="case-studies-preview-grid">
+              <Link href="/case-studies/freshbooks-organic-growth" className="case-studies-preview-item">
+                <p className="case-studies-preview-item-company">FreshBooks</p>
+                <h3 className="case-studies-preview-item-title">Scaling organic from #3 to #1 revenue channel</h3>
+                <div className="case-studies-preview-item-stat">
+                  <span className="stat-value">$30M</span>
+                  <span className="stat-label">ARR Generated</span>
+                </div>
+              </Link>
+              <Link href="/case-studies/newfold-search-infrastructure" className="case-studies-preview-item">
+                <p className="case-studies-preview-item-company">Newfold Digital</p>
+                <h3 className="case-studies-preview-item-title">Building search data infrastructure for 20X visibility</h3>
+                <div className="case-studies-preview-item-stat">
+                  <span className="stat-value">20X</span>
+                  <span className="stat-label">Query Visibility</span>
+                </div>
+              </Link>
+              <Link href="/case-studies/freshbooks-seo-governance" className="case-studies-preview-item">
+                <p className="case-studies-preview-item-company">FreshBooks</p>
+                <h3 className="case-studies-preview-item-title">Safeguarding $1M+ in traffic value with SEO governance</h3>
+                <div className="case-studies-preview-item-stat">
+                  <span className="stat-value">$1M+</span>
+                  <span className="stat-label">Traffic Protected</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Newsletter */}
         <section className="newsletter">
           <div className="newsletter-inner">

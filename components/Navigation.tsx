@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation'
 const navLinks = [
   { href: '/about', label: 'About' },
   { href: '/work', label: 'Work' },
+  { href: '/case-studies', label: 'Case Studies' },
   { href: 'https://newsletter.krinalmehta.com', label: 'Newsletter', external: true },
   { href: '/speaking', label: 'Speaking' },
   { href: '/contact', label: 'Contact' },
