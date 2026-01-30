@@ -26,6 +26,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${study.company}: ${study.title} | Krinal Mehta`,
     description: study.description,
+    openGraph: {
+      type: 'article',
+      publishedTime: '2025-01-01T00:00:00Z',
+      modifiedTime: '2026-01-25T00:00:00Z',
+      authors: ['Krinal Mehta'],
+      tags: study.tags,
+    },
+    alternates: {
+      canonical: `https://krinalmehta.com/case-studies/${slug}/`,
+    },
   }
 }
 
@@ -126,6 +136,47 @@ export default async function CaseStudyPage({ params }: PageProps) {
         </nav>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": `${study.company}: ${study.title}`,
+              "description": study.description,
+              "author": {
+                "@type": "Person",
+                "@id": "https://krinalmehta.com/#person",
+                "name": "Krinal Mehta"
+              },
+              "publisher": {
+                "@type": "Person",
+                "name": "Krinal Mehta",
+                "url": "https://krinalmehta.com"
+              },
+              "mainEntityOfPage": `https://krinalmehta.com/case-studies/${slug}/`,
+              "datePublished": "2025-01-01",
+              "dateModified": "2026-01-25",
+              "keywords": study.tags.join(", "),
+              "about": {
+                "@type": "Organization",
+                "name": study.company
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://krinalmehta.com/case-studies/" },
+                { "@type": "ListItem", "position": 3, "name": `${study.company}: ${study.title}` }
+              ]
+            }
+          ])
+        }}
+      />
     </>
   )
 }

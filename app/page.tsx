@@ -241,34 +241,107 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Krinal Mehta",
-            "givenName": "Krinal",
-            "familyName": "Mehta",
-            "jobTitle": "Director of SEO",
-            "worksFor": {
-              "@type": "Organization",
-              "name": "Newfold Digital",
-              "url": "https://newfold.com"
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://krinalmehta.com/#person",
+              "name": "Krinal Mehta",
+              "givenName": "Krinal",
+              "familyName": "Mehta",
+              "jobTitle": "Director of SEO",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Newfold Digital",
+                "url": "https://newfold.com"
+              },
+              "url": "https://krinalmehta.com",
+              "sameAs": [
+                "https://www.linkedin.com/in/krinal",
+                "https://twitter.com/krinal",
+                "https://www.youtube.com/@krinalmehta"
+              ],
+              "knowsAbout": [
+                "Search Engine Optimization",
+                "Growth Strategy",
+                "Paid Media",
+                "B2B SaaS",
+                "Answer Engine Optimization",
+                "AI-Powered Marketing",
+                "Enterprise SEO",
+                "Content Strategy",
+                "Data Infrastructure"
+              ],
+              "image": "https://krinalmehta.com/images/krinal-headshot.jpg",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Toronto",
+                "addressRegion": "Ontario",
+                "addressCountry": "CA"
+              }
             },
-            "url": "https://krinalmehta.com",
-            "sameAs": [
-              "https://www.linkedin.com/in/krinal",
-              "https://twitter.com/krinal",
-              "https://www.youtube.com/@krinal"
-            ],
-            "knowsAbout": [
-              "Search Engine Optimization",
-              "Growth Strategy",
-              "Paid Media",
-              "B2B SaaS",
-              "Answer Engine Optimization",
-              "AI-Powered Marketing"
-            ],
-            "image": "https://krinalmehta.com/images/krinal-headshot.jpg"
-          })
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Speaking & Media Appearances",
+              "itemListElement": [
+                {
+                  "@type": "VideoObject",
+                  "position": 1,
+                  "name": "Visibility Stack: Entity SEO, Reddit, AI",
+                  "description": "Krinal Mehta discusses entity SEO, Reddit visibility, and AI strategies on the SEO Video Show.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/23_KVSVqI6U/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=23_KVSVqI6U",
+                  "embedUrl": "https://www.youtube.com/embed/23_KVSVqI6U",
+                  "uploadDate": "2024-01-01"
+                },
+                {
+                  "@type": "VideoObject",
+                  "position": 2,
+                  "name": "Custom GPTs for SEOs: Automate Smarter, Rank Faster",
+                  "description": "How to build and deploy custom GPTs to automate SEO tasks, from content briefs to technical audits.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/9HJy_Mu97rI/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=9HJy_Mu97rI",
+                  "embedUrl": "https://www.youtube.com/embed/9HJy_Mu97rI",
+                  "uploadDate": "2024-01-01"
+                },
+                {
+                  "@type": "VideoObject",
+                  "position": 3,
+                  "name": "Relevance Engineering in SEO",
+                  "description": "Deep dive into how relevance engineering is changing SEO strategy and content optimization.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/dYaJt9pApCA/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=dYaJt9pApCA",
+                  "embedUrl": "https://www.youtube.com/embed/dYaJt9pApCA",
+                  "uploadDate": "2023-01-01"
+                },
+                {
+                  "@type": "VideoObject",
+                  "position": 4,
+                  "name": "Accounting Software and SEO Strategy",
+                  "description": "Discussion on building SEO programs for B2B SaaS companies, featuring FreshBooks' approach.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/kwl5j_zTq-g/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=kwl5j_zTq-g",
+                  "embedUrl": "https://www.youtube.com/embed/kwl5j_zTq-g",
+                  "uploadDate": "2023-01-01"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Recommendation",
+              "author": { "@type": "Person", "name": "Jeff McMahon", "jobTitle": "Director, Digital Performance", "worksFor": { "@type": "Organization", "name": "Docebo" } },
+              "reviewBody": "Krinal was our go-to subject matter expert for all things SEO. His deep knowledge and strategic thinking helped scale our brand into new markets, including the UK, EU, AU, and ZA, delivering significant results. What truly sets Krinal apart is his passion and curiosity for SEO. It's more than just an occupation to him—it's a calling.",
+              "about": { "@type": "Person", "@id": "https://krinalmehta.com/#person" }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Recommendation",
+              "author": { "@type": "Person", "name": "Reuben Alex", "jobTitle": "SEO/GEO Strategies" },
+              "reviewBody": "Krinal and I worked very closely together for almost three years at FreshBooks. I admired his leadership and problem-solving skills. His understanding of search intent, recognizing it early through signs and signals, allowed him to do SEO with a strong strategic approach, consistently driving results.",
+              "about": { "@type": "Person", "@id": "https://krinalmehta.com/#person" }
+            }
+          ])
         }}
       />
     </>

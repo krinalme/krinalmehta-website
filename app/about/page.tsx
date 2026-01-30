@@ -7,6 +7,14 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'About',
   description: '17 years building growth engines at scale. From hands-on SEO specialist to leading global teams across organic, paid, and partnerships at multi-billion dollar companies.',
+  openGraph: {
+    type: 'profile',
+    firstName: 'Krinal',
+    lastName: 'Mehta',
+  } as any,
+  alternates: {
+    canonical: 'https://krinalmehta.com/about/',
+  },
 }
 
 const timeline = [
@@ -130,6 +138,20 @@ export default function About() {
       </main>
 
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+              { "@type": "ListItem", "position": 2, "name": "About" }
+            ]
+          })
+        }}
+      />
     </>
   )
 }

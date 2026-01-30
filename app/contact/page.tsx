@@ -6,6 +6,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Krinal Mehta. Connect on LinkedIn or reach out via email.',
+  alternates: {
+    canonical: 'https://krinalmehta.com/contact/',
+  },
 }
 
 export default function Contact() {
@@ -98,6 +101,48 @@ export default function Contact() {
       </main>
 
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://krinalmehta.com/#person",
+              "name": "Krinal Mehta",
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "professional",
+                  "url": "https://www.linkedin.com/in/krinal",
+                  "availableLanguage": "English"
+                },
+                {
+                  "@type": "ContactPoint",
+                  "contactType": "professional",
+                  "email": "krinalmehta@gmail.com",
+                  "availableLanguage": "English"
+                }
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Toronto",
+                "addressRegion": "Ontario",
+                "addressCountry": "CA"
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Contact" }
+              ]
+            }
+          ])
+        }}
+      />
     </>
   )
 }
