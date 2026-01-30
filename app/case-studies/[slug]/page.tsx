@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       modifiedTime: '2026-01-25T00:00:00Z',
       authors: ['Krinal Mehta'],
       tags: study.tags,
-      images: [{ url: '/images/krinal-headshot.jpg', width: 1200, height: 630 }],
+      images: [{ url: '/images/krinal-headshot.webp', width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `https://www.krinalmehta.com/case-studies/${slug}/`,

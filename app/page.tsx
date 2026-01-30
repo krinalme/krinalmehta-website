@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             <div className="hero-image">
               <Image
-                src="/images/krinal-headshot.jpg"
+                src="/images/krinal-headshot.webp"
                 alt="Krinal Mehta"
                 width={450}
                 height={600}
@@ -272,7 +272,7 @@ export default function Home() {
                 "Content Strategy",
                 "Data Infrastructure"
               ],
-              "image": "https://www.krinalmehta.com/images/krinal-headshot.jpg",
+              "image": "https://www.krinalmehta.com/images/krinal-headshot.webp",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Toronto",

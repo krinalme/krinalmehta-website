@@ -41,7 +41,7 @@ export default function About() {
           </div>
           <div className="page-header-image">
             <Image
-              src="/images/krinal-headshot.jpg"
+              src="/images/krinal-headshot.webp"
               alt="Krinal Mehta"
               width={400}
               height={500}
