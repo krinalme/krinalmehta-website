@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://krinalmehta.com',
+    canonical: 'https://krinalmehta.com/',
   },
 }
 

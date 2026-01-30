@@ -192,7 +192,7 @@ export default function Home() {
             <div className="speaking-preview-grid">
               <a href="https://www.youtube.com/watch?v=23_KVSVqI6U" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
                 <div className="speaking-preview-thumb">
-                  <img src="https://img.youtube.com/vi/23_KVSVqI6U/hqdefault.jpg" alt="Visibility Stack: Entity SEO, Reddit, AI" loading="lazy" />
+                  <img src="https://img.youtube.com/vi/23_KVSVqI6U/hqdefault.jpg" alt="Visibility Stack: Entity SEO, Reddit, AI" loading="lazy" width={480} height={360} />
                   <div className="speaking-preview-play">
                     <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
                   </div>
@@ -202,7 +202,7 @@ export default function Home() {
               </a>
               <a href="https://www.youtube.com/watch?v=9HJy_Mu97rI" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
                 <div className="speaking-preview-thumb">
-                  <img src="https://img.youtube.com/vi/9HJy_Mu97rI/hqdefault.jpg" alt="Custom GPTs for SEOs: Automate Smarter, Rank Faster" loading="lazy" />
+                  <img src="https://img.youtube.com/vi/9HJy_Mu97rI/hqdefault.jpg" alt="Custom GPTs for SEOs: Automate Smarter, Rank Faster" loading="lazy" width={480} height={360} />
                   <div className="speaking-preview-play">
                     <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
                   </div>
@@ -212,7 +212,7 @@ export default function Home() {
               </a>
               <a href="https://www.youtube.com/watch?v=dYaJt9pApCA" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
                 <div className="speaking-preview-thumb">
-                  <img src="https://img.youtube.com/vi/dYaJt9pApCA/hqdefault.jpg" alt="Relevance Engineering in SEO" loading="lazy" />
+                  <img src="https://img.youtube.com/vi/dYaJt9pApCA/hqdefault.jpg" alt="Relevance Engineering in SEO" loading="lazy" width={480} height={360} />
                   <div className="speaking-preview-play">
                     <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
                   </div>
@@ -222,7 +222,7 @@ export default function Home() {
               </a>
               <a href="https://www.youtube.com/watch?v=kwl5j_zTq-g" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
                 <div className="speaking-preview-thumb">
-                  <img src="https://img.youtube.com/vi/kwl5j_zTq-g/hqdefault.jpg" alt="Accounting Software and SEO Strategy" loading="lazy" />
+                  <img src="https://img.youtube.com/vi/kwl5j_zTq-g/hqdefault.jpg" alt="Accounting Software and SEO Strategy" loading="lazy" width={480} height={360} />
                   <div className="speaking-preview-play">
                     <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
                   </div>
