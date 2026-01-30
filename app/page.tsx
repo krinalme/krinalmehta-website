@@ -30,6 +30,7 @@ export default function Home() {
                 width={450}
                 height={600}
                 priority
+                fetchPriority="high"
               />
             </div>
           </div>

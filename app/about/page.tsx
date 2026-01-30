@@ -46,6 +46,7 @@ export default function About() {
               width={400}
               height={500}
               priority
+              fetchPriority="high"
             />
           </div>
         </header>
