@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 }
 
 const timeline = [
-  { date: '2024 – Present', title: 'Director of SEO', company: 'Newfold Digital (Bluehost, HostGator, Yoast)', description: 'Leading a global team of 29 across SEO, data analytics, content marketing, and development. Built search data infrastructure expanding query visibility 20X. Architected AI-powered content operations increasing velocity 4X.' },
-  { date: '2020 – 2024', title: 'Global SEO Lead', company: 'FreshBooks', description: 'Grew team from 1 to 8. Scaled organic from #3 to #1 revenue channel, contributing $30M ARR in 2021. Built the Accountants Directory marketplace from concept to launch. Expanded into 7 international markets with 30% conversion lift.' },
-  { date: '2019 – 2021', title: 'Account Manager, B2B SEO & PPC', company: 'Search Engine People', description: 'Managed growth for enterprise clients including G Adventures, PwC, OpenText, ProntoForms, and York University at one of Canada\'s largest digital marketing agencies.' },
+  { date: '2024 – Present', title: 'Director of SEO', company: 'Newfold Digital', companyUrl: 'https://newfold.com', companySuffix: ' (Bluehost, HostGator, Yoast)', description: 'Leading a global team of 29 across SEO, data analytics, content marketing, and development. Built search data infrastructure expanding query visibility 20X. Architected AI-powered content operations increasing velocity 4X.' },
+  { date: '2020 – 2024', title: 'Global SEO Lead', company: 'FreshBooks', companyUrl: 'https://www.freshbooks.com', description: 'Grew team from 1 to 8. Scaled organic from #3 to #1 revenue channel, contributing $30M ARR in 2021. Built the Accountants Directory marketplace from concept to launch. Expanded into 7 international markets with 30% conversion lift.' },
+  { date: '2019 – 2021', title: 'Account Manager, B2B SEO & PPC', company: 'Search Engine People', companyUrl: 'https://www.searchenginepeople.com', description: 'Managed growth for enterprise clients including G Adventures, PwC, OpenText, ProntoForms, and York University at one of Canada\'s largest digital marketing agencies.' },
   { date: '2017 – 2019', title: 'Founder & Chief Growth Officer', company: 'Growth Dot Digital', description: 'Founded and scaled a digital growth consultancy, achieving 500% revenue growth in two years. Consulted for startups and growth-stage companies across North America and India.' },
   { date: '2017', title: 'Co-Founder', company: 'Squid Sense', description: 'Co-founded an AI-native startup generating automated insights from Google Analytics data. Secured seed funding from the Government of Gujarat and incubated at GLS Leaf Ahmedabad. Google launched the same concept six months later as "Insights" inside Google Analytics.' },
   { date: '2011 – 2016', title: 'Digital Marketing Manager', company: 'Search Results Media', description: 'Led a 12-member team managing 300+ clients across US, Canada, and UK. Built a custom B2B distribution CRM for a global refrigerant company from conception to launch.' },
@@ -92,7 +92,12 @@ export default function About() {
                   <div className="about-timeline-date">{item.date}</div>
                   <div className="about-timeline-content">
                     <h3>{item.title}</h3>
-                    <p className="company">{item.company}</p>
+                    <p className="company">
+                      {item.companyUrl ? (
+                        <a href={item.companyUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>{item.company}</a>
+                      ) : item.company}
+                      {item.companySuffix}
+                    </p>
                     <p>{item.description}</p>
                   </div>
                 </div>
@@ -106,7 +111,7 @@ export default function About() {
           <div style={{ maxWidth: 'var(--max-width-prose)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '2rem', fontWeight: 400, marginBottom: 'var(--space-md)', opacity: 0.9 }}>Beyond work</h2>
             <p style={{ fontSize: '1.05rem', lineHeight: 1.8, opacity: 0.8, marginBottom: 'var(--space-md)' }}>I live in the Waterloo region of Ontario with my wife Priya, our son Yug, and my mother. Multi-generational households are the norm where I come from, and I wouldn't have it any other way. When I'm not thinking about growth systems, I'm usually exploring AI tools, reading about product strategy, or trying to find time for music. I've been wanting to get back into vocal training.</p>
-            <p style={{ fontSize: '1.05rem', lineHeight: 1.8, opacity: 0.8 }}>I'm also a perpetual teacher. I've been a Lead Instructor at BrainStation, a trainer for IAB Canada, and I regularly <Link href="/speaking" style={{ color: 'var(--color-paper)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>speak at industry events and webinars</Link>. I believe the best way to learn is to teach, and the best way to stay sharp is to share what you know.</p>
+            <p style={{ fontSize: '1.05rem', lineHeight: 1.8, opacity: 0.8 }}>I'm also a perpetual teacher. I've been a Lead Instructor at <a href="https://brainstation.io" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-paper)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>BrainStation</a>, a trainer for <a href="https://iabcanada.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-paper)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>IAB Canada</a>, and I regularly <Link href="/speaking" style={{ color: 'var(--color-paper)', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>speak at industry events and webinars</Link>. I believe the best way to learn is to teach, and the best way to stay sharp is to share what you know.</p>
           </div>
         </section>
 

@@ -280,6 +280,28 @@ button:focus-visible {
   opacity: 1;
 }
 
+a.brand-item {
+  text-decoration: none;
+}
+
+a.work-role-tag {
+  text-decoration: none;
+}
+
+a.work-role-tag:hover {
+  background: var(--color-paper);
+}
+
+a.work-client {
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+a.work-client:hover {
+  background: var(--color-paper);
+  transform: translateY(-2px);
+}
+
 /* Proof Section */
 .proof {
   padding: var(--space-xl) var(--space-md);
@@ -501,15 +523,12 @@ button:focus-visible {
 
 .speaking-preview-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-md);
 }
 
 .speaking-preview-item {
   display: block;
-  padding: var(--space-md);
-  background: var(--color-paper-warm);
-  border-radius: 8px;
   transition: transform 0.2s ease;
 }
 
@@ -517,24 +536,52 @@ button:focus-visible {
   transform: translateY(-4px);
 }
 
+.speaking-preview-thumb {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin-bottom: var(--space-sm);
+}
+
+.speaking-preview-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.speaking-preview-item:hover .speaking-preview-thumb img {
+  filter: grayscale(0%);
+}
+
+.speaking-preview-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.speaking-preview-item:hover .speaking-preview-play {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 .speaking-preview-item-venue {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-ink-muted);
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0.25rem;
 }
 
 .speaking-preview-item-title {
   font-family: var(--font-display);
   font-size: 1.25rem;
   line-height: 1.3;
-  margin-bottom: var(--space-sm);
-}
-
-.speaking-preview-item-type {
-  font-size: 0.85rem;
-  color: var(--color-ink-light);
 }
 
 /* Case Studies Preview (Homepage) */

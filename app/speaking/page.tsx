@@ -95,18 +95,18 @@ export default function Speaking() {
           <div style={{ maxWidth: 'var(--max-width)', margin: '0 auto' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '1.75rem', fontWeight: 400, marginBottom: 'var(--space-md)' }}>Teaching & Training</h2>
             <div className="speaking-grid">
-              <div className="speaking-card" style={{ background: 'var(--color-paper)' }}>
+              <a href="https://brainstation.io" target="_blank" rel="noopener noreferrer" className="speaking-card" style={{ background: 'var(--color-paper)' }}>
                 <p className="speaking-card-venue" style={{ marginBottom: 'var(--space-xs)' }}>BrainStation</p>
                 <h3>Lead Instructor, Search Engine Marketing</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-sm)' }}>2021 – 2022</p>
                 <p>Taught SEO, SEM, and Google Analytics courses to senior industry professionals transitioning into digital marketing or deepening their expertise.</p>
-              </div>
-              <div className="speaking-card" style={{ background: 'var(--color-paper)' }}>
+              </a>
+              <a href="https://iabcanada.com" target="_blank" rel="noopener noreferrer" className="speaking-card" style={{ background: 'var(--color-paper)' }}>
                 <p className="speaking-card-venue" style={{ marginBottom: 'var(--space-xs)' }}>IAB Canada</p>
                 <h3>SEO Trainer</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--color-ink-muted)', marginBottom: 'var(--space-sm)' }}>2020 – 2021</p>
                 <p>Recognized as a SEM subject matter expert by the Interactive Advertising Bureau to train marketing leaders from Canada's top enterprise brands.</p>
-              </div>
+              </a>
             </div>
           </div>
         </section>

@@ -46,14 +46,14 @@ export default function Home() {
           <div className="brands-inner">
             <p className="brands-label">Brands I've Scaled</p>
             <div className="brands-grid">
-              <span className="brand-item">Bluehost</span>
-              <span className="brand-item">HostGator</span>
-              <span className="brand-item">Yoast</span>
-              <span className="brand-item">FreshBooks</span>
-              <span className="brand-item">PwC</span>
-              <span className="brand-item">OpenText</span>
-              <span className="brand-item">York University</span>
-              <span className="brand-item">ProntoForms</span>
+              <a href="https://www.bluehost.com" target="_blank" rel="noopener noreferrer" className="brand-item">Bluehost</a>
+              <a href="https://www.hostgator.com" target="_blank" rel="noopener noreferrer" className="brand-item">HostGator</a>
+              <a href="https://yoast.com" target="_blank" rel="noopener noreferrer" className="brand-item">Yoast</a>
+              <a href="https://www.freshbooks.com" target="_blank" rel="noopener noreferrer" className="brand-item">FreshBooks</a>
+              <a href="https://www.pwc.com" target="_blank" rel="noopener noreferrer" className="brand-item">PwC</a>
+              <a href="https://www.opentext.com" target="_blank" rel="noopener noreferrer" className="brand-item">OpenText</a>
+              <a href="https://www.yorku.ca" target="_blank" rel="noopener noreferrer" className="brand-item">York University</a>
+              <a href="https://www.prontoforms.com" target="_blank" rel="noopener noreferrer" className="brand-item">ProntoForms</a>
             </div>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function Home() {
                 <p className="testimonial-quote">"Krinal was our go-to subject matter expert for all things SEO. His deep knowledge and strategic thinking helped scale our brand into new markets, including the UK, EU, AU, and ZA, delivering significant results. What truly sets Krinal apart is his passion and curiosity for SEO. It's more than just an occupation to him—it's a calling."</p>
                 <div className="testimonial-author">
                   <span className="testimonial-name">Jeff McMahon</span>
-                  <span className="testimonial-role">SaaS Marketing Leader, Docebo · Managed Krinal at FreshBooks</span>
+                  <span className="testimonial-role">SaaS Marketing Leader, <a href="https://www.docebo.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>Docebo</a> · Managed Krinal at <a href="https://www.freshbooks.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>FreshBooks</a></span>
                 </div>
               </div>
               <div className="testimonial-card">
@@ -190,21 +190,46 @@ export default function Home() {
               <Link href="/speaking" className="speaking-preview-link">View all →</Link>
             </div>
             <div className="speaking-preview-grid">
-              <a href="https://www.youtube.com/watch?v=Uk-3T_0pbl0" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
+              <a href="https://www.youtube.com/watch?v=23_KVSVqI6U" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
+                <div className="speaking-preview-thumb">
+                  <img src="https://img.youtube.com/vi/23_KVSVqI6U/hqdefault.jpg" alt="Visibility Stack: Entity SEO, Reddit, AI" loading="lazy" />
+                  <div className="speaking-preview-play">
+                    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+                  </div>
+                </div>
+                <p className="speaking-preview-item-venue">SEO Video Show</p>
+                <h3 className="speaking-preview-item-title">Visibility Stack: Entity SEO, Reddit, AI</h3>
+              </a>
+              <a href="https://www.youtube.com/watch?v=9HJy_Mu97rI" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
+                <div className="speaking-preview-thumb">
+                  <img src="https://img.youtube.com/vi/9HJy_Mu97rI/hqdefault.jpg" alt="Custom GPTs for SEOs: Automate Smarter, Rank Faster" loading="lazy" />
+                  <div className="speaking-preview-play">
+                    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+                  </div>
+                </div>
+                <p className="speaking-preview-item-venue">SEOTalk Webinar</p>
+                <h3 className="speaking-preview-item-title">Custom GPTs for SEOs: Automate Smarter, Rank Faster</h3>
+              </a>
+              <a href="https://www.youtube.com/watch?v=dYaJt9pApCA" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
+                <div className="speaking-preview-thumb">
+                  <img src="https://img.youtube.com/vi/dYaJt9pApCA/hqdefault.jpg" alt="Relevance Engineering in SEO" loading="lazy" />
+                  <div className="speaking-preview-play">
+                    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+                  </div>
+                </div>
                 <p className="speaking-preview-item-venue">SEOTalk Webinar</p>
                 <h3 className="speaking-preview-item-title">Relevance Engineering in SEO</h3>
-                <p className="speaking-preview-item-type">Webinar · Watch on YouTube</p>
               </a>
-              <a href="https://www.slideshare.net/slideshow/seo-audit-of-canderecom-krinal-mehta/113745405" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
-                <p className="speaking-preview-item-venue">SEMrush</p>
-                <h3 className="speaking-preview-item-title">SEO Audit / SEO Surgery</h3>
-                <p className="speaking-preview-item-type">Webinar · with Jono Alderson (Yoast)</p>
+              <a href="https://www.youtube.com/watch?v=kwl5j_zTq-g" target="_blank" rel="noopener noreferrer" className="speaking-preview-item">
+                <div className="speaking-preview-thumb">
+                  <img src="https://img.youtube.com/vi/kwl5j_zTq-g/hqdefault.jpg" alt="Accounting Software and SEO Strategy" loading="lazy" />
+                  <div className="speaking-preview-play">
+                    <svg viewBox="0 0 68 48" width="68" height="48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="#212121" fillOpacity="0.8"/><path d="M45 24L27 14v20" fill="#fff"/></svg>
+                  </div>
+                </div>
+                <p className="speaking-preview-item-venue">Pathmonk Presents</p>
+                <h3 className="speaking-preview-item-title">Accounting Software and SEO Strategy</h3>
               </a>
-              <div className="speaking-preview-item">
-                <p className="speaking-preview-item-venue">BrainStation</p>
-                <h3 className="speaking-preview-item-title">Search Engine Marketing</h3>
-                <p className="speaking-preview-item-type">Lead Instructor · 2021-2022</p>
-              </div>
             </div>
           </div>
         </section>

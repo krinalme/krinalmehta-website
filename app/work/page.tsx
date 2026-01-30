@@ -29,11 +29,11 @@ export default function Work() {
               <div className="work-role-sidebar">
                 <p className="work-role-date">2024 – Present</p>
                 <h2 className="work-role-title">Director of SEO</h2>
-                <p className="work-role-company">Newfold Digital</p>
+                <p className="work-role-company"><a href="https://newfold.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>Newfold Digital</a></p>
                 <div className="work-role-tags">
-                  <span className="work-role-tag">Bluehost</span>
-                  <span className="work-role-tag">HostGator</span>
-                  <span className="work-role-tag">Yoast</span>
+                  <a href="https://www.bluehost.com" target="_blank" rel="noopener noreferrer" className="work-role-tag">Bluehost</a>
+                  <a href="https://www.hostgator.com" target="_blank" rel="noopener noreferrer" className="work-role-tag">HostGator</a>
+                  <a href="https://yoast.com" target="_blank" rel="noopener noreferrer" className="work-role-tag">Yoast</a>
                 </div>
               </div>
               <div className="work-role-content">
@@ -58,7 +58,7 @@ export default function Work() {
                 <h3>What I built</h3>
                 <p><strong>Search data infrastructure.</strong> Merged GSC BigQuery and Google Ads API feeds to expand query visibility from 200K to 4M queries. Trained a deep learning model on 50K manually classified queries to achieve 90-category intent classification. Automated 24-hour refresh cycles and generated 50K semantic internal links.</p>
                 <p><strong>AI-powered content operations.</strong> Architected workflows leveraging the 4M-query dataset for intent clustering, competitive analysis, and semantic optimization. Deployed custom GPT bots for brief generation, QA, and visual assets. Reduced production time 70% while increasing output to 150 pieces monthly.</p>
-                <p><strong>AEO strategy.</strong> Pioneered the company's Answer Engine Optimization approach, integrating tools like WordLift and Kalicube Pro to enhance semantic optimization and build competitive advantage in AI-driven search.</p>
+                <p><strong>AEO strategy.</strong> Pioneered the company's Answer Engine Optimization approach, integrating tools like <a href="https://wordlift.io" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>WordLift</a> and <a href="https://kalicube.pro" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>Kalicube Pro</a> to enhance semantic optimization and build competitive advantage in AI-driven search.</p>
               </div>
             </div>
 
@@ -67,7 +67,7 @@ export default function Work() {
               <div className="work-role-sidebar">
                 <p className="work-role-date">2020 – 2024</p>
                 <h2 className="work-role-title">Global SEO Lead</h2>
-                <p className="work-role-company">FreshBooks</p>
+                <p className="work-role-company"><a href="https://www.freshbooks.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>FreshBooks</a></p>
                 <div className="work-role-tags">
                   <span className="work-role-tag">B2B SaaS</span>
                   <span className="work-role-tag">Fintech</span>
@@ -105,10 +105,10 @@ export default function Work() {
               <div className="work-role-sidebar">
                 <p className="work-role-date">2019 – 2021</p>
                 <h2 className="work-role-title">Account Manager, B2B SEO & PPC</h2>
-                <p className="work-role-company">Search Engine People</p>
+                <p className="work-role-company"><a href="https://www.searchenginepeople.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>Search Engine People</a></p>
               </div>
               <div className="work-role-content">
-                <p>Managed growth strategy and execution for enterprise B2B clients at one of Canada's largest digital marketing agencies. Led strategic planning for key accounts including G Adventures, PwC, OpenText, ProntoForms, and York University.</p>
+                <p>Managed growth strategy and execution for enterprise B2B clients at one of Canada's largest digital marketing agencies. Led strategic planning for key accounts including <a href="https://www.gadventures.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>G Adventures</a>, <a href="https://www.pwc.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>PwC</a>, <a href="https://www.opentext.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>OpenText</a>, <a href="https://www.prontoforms.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>ProntoForms</a>, and <a href="https://www.yorku.ca" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>York University</a>.</p>
               </div>
             </div>
 
@@ -120,7 +120,7 @@ export default function Work() {
               </div>
               <div className="work-role-content">
                 <p>Founded and scaled a digital growth consultancy, achieving 500% revenue growth in two years. Consulted for startups and growth-stage companies across North America and India.</p>
-                <p>Notable engagement: Scaled organic traffic 20%+ for Allevents.in (2.5M URL event marketplace platform) in 12 days, meeting an angel investor's growth condition for continued funding.</p>
+                <p>Notable engagement: Scaled organic traffic 20%+ for <a href="https://allevents.in" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(0,0,0,0.2)', textUnderlineOffset: '2px' }}>Allevents.in</a> (2.5M URL event marketplace platform) in 12 days, meeting an angel investor's growth condition for continued funding.</p>
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function Work() {
             <h2 className="work-case-study-title">How FreshBooks safeguarded $1M+ in traffic value with proactive SEO monitoring</h2>
             <div className="work-case-study-grid">
               <div className="work-case-study-content">
-                <p>When I joined FreshBooks, keeping tabs on a site with thousands of pages across multiple stakeholders was nearly impossible. I implemented Conductor Website Monitoring to create real-time visibility into site changes and SEO issues.</p>
+                <p>When I joined FreshBooks, keeping tabs on a site with thousands of pages across multiple stakeholders was nearly impossible. I implemented <a href="https://www.conductor.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.3)', textUnderlineOffset: '2px' }}>Conductor</a> Website Monitoring to create real-time visibility into site changes and SEO issues.</p>
                 <p>The system caught critical issues before they impacted rankings: accidentally no-indexed pages, missing H1 tags, deleted content, broken analytics tags. Beyond firefighting, we used it to establish "The Web Council," a cross-functional committee enforcing SEO governance across the organization.</p>
                 <p>The result? Traffic that was NOT lost. Issues caught in hours instead of weeks. A culture of SEO awareness across engineering, content, and product teams.</p>
                 <div className="work-case-study-links">
@@ -155,9 +155,16 @@ export default function Work() {
             <h2 className="work-clients-title">Brands I've worked with</h2>
             <p className="work-clients-intro">Across in-house roles and agency/consulting engagements, I've helped scale growth for companies ranging from startups to global enterprises.</p>
             <div className="work-clients-grid">
-              {['Bluehost', 'HostGator', 'Yoast', 'FreshBooks', 'PwC', 'OpenText', 'G Adventures', 'York University', 'ProntoForms', 'Allevents.in'].map((brand) => (
-                <span key={brand} className="work-client">{brand}</span>
-              ))}
+              <a href="https://www.bluehost.com" target="_blank" rel="noopener noreferrer" className="work-client">Bluehost</a>
+              <a href="https://www.hostgator.com" target="_blank" rel="noopener noreferrer" className="work-client">HostGator</a>
+              <a href="https://yoast.com" target="_blank" rel="noopener noreferrer" className="work-client">Yoast</a>
+              <a href="https://www.freshbooks.com" target="_blank" rel="noopener noreferrer" className="work-client">FreshBooks</a>
+              <a href="https://www.pwc.com" target="_blank" rel="noopener noreferrer" className="work-client">PwC</a>
+              <a href="https://www.opentext.com" target="_blank" rel="noopener noreferrer" className="work-client">OpenText</a>
+              <a href="https://www.gadventures.com" target="_blank" rel="noopener noreferrer" className="work-client">G Adventures</a>
+              <a href="https://www.yorku.ca" target="_blank" rel="noopener noreferrer" className="work-client">York University</a>
+              <a href="https://www.prontoforms.com" target="_blank" rel="noopener noreferrer" className="work-client">ProntoForms</a>
+              <a href="https://allevents.in" target="_blank" rel="noopener noreferrer" className="work-client">Allevents.in</a>
             </div>
           </div>
         </section>

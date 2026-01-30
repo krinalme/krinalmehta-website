@@ -50,7 +50,7 @@ export const caseStudies: CaseStudy[] = [
     quote: {
       text: 'Krinal was our go-to subject matter expert for all things SEO. His deep knowledge and strategic thinking helped scale our brand into new markets, delivering significant results.',
       author: 'Jeff McMahon',
-      role: 'SaaS Marketing Leader, Docebo',
+      role: 'Director, Digital Performance',
     },
   },
   {
