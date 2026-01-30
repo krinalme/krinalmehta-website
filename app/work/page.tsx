@@ -6,6 +6,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Work',
   description: 'Building growth engines at Newfold Digital (Bluehost, HostGator, Yoast), FreshBooks, and more. Case studies and results from 17 years of scaling organic and paid acquisition.',
+  alternates: {
+    canonical: 'https://krinalmehta.com/work/',
+  },
 }
 
 export default function Work() {
@@ -171,6 +174,81 @@ export default function Work() {
       </main>
 
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Work Experience — Krinal Mehta",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "item": {
+                    "@type": "OrganizationRole",
+                    "roleName": "Director of SEO",
+                    "startDate": "2024",
+                    "memberOf": {
+                      "@type": "Organization",
+                      "name": "Newfold Digital",
+                      "url": "https://newfold.com",
+                      "subOrganization": [
+                        { "@type": "Organization", "name": "Bluehost", "url": "https://www.bluehost.com" },
+                        { "@type": "Organization", "name": "HostGator", "url": "https://www.hostgator.com" },
+                        { "@type": "Organization", "name": "Yoast", "url": "https://yoast.com" }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "item": {
+                    "@type": "OrganizationRole",
+                    "roleName": "Global SEO Lead",
+                    "startDate": "2020",
+                    "endDate": "2024",
+                    "memberOf": { "@type": "Organization", "name": "FreshBooks", "url": "https://www.freshbooks.com" }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "item": {
+                    "@type": "OrganizationRole",
+                    "roleName": "Account Manager, B2B SEO & PPC",
+                    "startDate": "2019",
+                    "endDate": "2021",
+                    "memberOf": { "@type": "Organization", "name": "Search Engine People", "url": "https://www.searchenginepeople.com" }
+                  }
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 4,
+                  "item": {
+                    "@type": "OrganizationRole",
+                    "roleName": "Founder & Chief Growth Officer",
+                    "startDate": "2017",
+                    "endDate": "2019",
+                    "memberOf": { "@type": "Organization", "name": "Growth Dot Digital" }
+                  }
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Work" }
+              ]
+            }
+          ])
+        }}
+      />
     </>
   )
 }

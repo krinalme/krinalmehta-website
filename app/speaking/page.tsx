@@ -228,6 +228,43 @@ export default function Speaking() {
             },
             {
               "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Speaking Videos — Krinal Mehta",
+              "itemListElement": [
+                {
+                  "@type": "VideoObject",
+                  "position": 1,
+                  "name": "Relevance Engineering in SEO",
+                  "description": "Deep dive into how relevance engineering is changing the way we think about SEO strategy and content optimization.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/Uk-3T_0pbl0/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=Uk-3T_0pbl0",
+                  "embedUrl": "https://www.youtube.com/embed/Uk-3T_0pbl0",
+                  "uploadDate": "2023-01-01"
+                },
+                {
+                  "@type": "VideoObject",
+                  "position": 2,
+                  "name": "Custom GPTs for SEOs",
+                  "description": "How to build and deploy custom GPTs to automate SEO tasks, from content briefs to technical audits.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/dYaJt9pApCA/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=dYaJt9pApCA",
+                  "embedUrl": "https://www.youtube.com/embed/dYaJt9pApCA",
+                  "uploadDate": "2024-01-01"
+                },
+                {
+                  "@type": "VideoObject",
+                  "position": 3,
+                  "name": "SEO Strategy for SaaS",
+                  "description": "Discussion on building SEO programs for B2B SaaS companies, including FreshBooks' approach to content and international expansion.",
+                  "thumbnailUrl": "https://img.youtube.com/vi/9HJy_Mu97rI/hqdefault.jpg",
+                  "contentUrl": "https://www.youtube.com/watch?v=9HJy_Mu97rI",
+                  "embedUrl": "https://www.youtube.com/embed/9HJy_Mu97rI",
+                  "uploadDate": "2023-01-01"
+                }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },

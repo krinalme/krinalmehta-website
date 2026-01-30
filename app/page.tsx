@@ -278,7 +278,17 @@ export default function Home() {
                 "addressLocality": "Toronto",
                 "addressRegion": "Ontario",
                 "addressCountry": "CA"
-              }
+              },
+              "affiliation": [
+                { "@type": "Organization", "name": "Bluehost", "url": "https://www.bluehost.com" },
+                { "@type": "Organization", "name": "HostGator", "url": "https://www.hostgator.com" },
+                { "@type": "Organization", "name": "Yoast", "url": "https://yoast.com" },
+                { "@type": "Organization", "name": "FreshBooks", "url": "https://www.freshbooks.com" }
+              ],
+              "alumniOf": [
+                { "@type": "Organization", "name": "FreshBooks", "url": "https://www.freshbooks.com" },
+                { "@type": "Organization", "name": "Search Engine People", "url": "https://www.searchenginepeople.com" }
+              ]
             },
             {
               "@context": "https://schema.org",

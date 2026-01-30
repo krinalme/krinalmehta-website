@@ -7,6 +7,9 @@ import { caseStudies } from './data'
 export const metadata: Metadata = {
   title: 'Case Studies | Krinal Mehta',
   description: 'Detailed case studies from building growth engines at FreshBooks, Newfold Digital, and more. See how strategic SEO and growth marketing drive measurable business results.',
+  alternates: {
+    canonical: 'https://krinalmehta.com/case-studies/',
+  },
 }
 
 export default function CaseStudies() {
@@ -57,6 +60,38 @@ export default function CaseStudies() {
         </section>
       </main>
       <Footer />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "name": "Case Studies — Krinal Mehta",
+              "description": "Detailed case studies from building growth engines at FreshBooks, Newfold Digital, and more.",
+              "url": "https://krinalmehta.com/case-studies/",
+              "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": caseStudies.map((study, index) => ({
+                  "@type": "ListItem",
+                  "position": index + 1,
+                  "url": `https://krinalmehta.com/case-studies/${study.slug}/`,
+                  "name": `${study.company}: ${study.title}`
+                }))
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Case Studies" }
+              ]
+            }
+          ])
+        }}
+      />
     </>
   )
 }

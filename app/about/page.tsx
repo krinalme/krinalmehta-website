@@ -142,14 +142,46 @@ export default function About() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
-              { "@type": "ListItem", "position": 2, "name": "About" }
-            ]
-          })
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 2, "name": "About" }
+              ]
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is Krinal Mehta's approach to building data infrastructure for growth?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can't optimize what you can't measure. Before tactics, Krinal builds systems that give teams visibility into what's actually happening and the ability to act on it. At Newfold Digital, this meant expanding query visibility from 200K to 4M tracked queries."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does Krinal Mehta use AI and leverage in growth marketing?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The best growth work creates leverage. AI-powered workflows, automated systems, and scalable processes that make teams faster and smarter over time. Krinal architected AI-powered content operations that reduced production time by 70% while increasing output."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What is Krinal Mehta's philosophy on growth channels?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Think in systems, not channels. Organic, paid, partnerships—they're not separate. They're interconnected parts of an acquisition system. The companies that win understand how they work together. At FreshBooks, this approach scaled organic from #3 to #1 revenue channel, generating $30M ARR."
+                  }
+                }
+              ]
+            }
+          ])
         }}
       />
     </>
