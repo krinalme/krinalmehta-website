@@ -1,5 +1,21 @@
 import type { Metadata } from 'next'
+import { Instrument_Serif, DM_Sans } from 'next/font/google'
 import './globals.css'
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ['latin'],
+  weight: ['400'],
+  style: ['normal', 'italic'],
+  variable: '--font-instrument-serif',
+  display: 'swap',
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -45,13 +61,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${instrumentSerif.variable} ${dmSans.variable}`}>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://img.youtube.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
       </head>
       <body>
         <a href="#main-content" className="skip-link">Skip to main content</a>

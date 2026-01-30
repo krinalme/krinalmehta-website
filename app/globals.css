@@ -6,8 +6,8 @@
   --color-paper-warm: #f5f4f0;
   --color-accent: #2563eb;
   --color-accent-subtle: #dbeafe;
-  --font-display: 'Instrument Serif', Georgia, serif;
-  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-display: var(--font-instrument-serif), Georgia, serif;
+  --font-body: var(--font-dm-sans), -apple-system, sans-serif;
   --max-width: 1200px;
   --max-width-prose: 720px;
   --space-xs: 0.5rem;
