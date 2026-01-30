@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [{ url: '/images/krinal-headshot.jpg', width: 1200, height: 630 }],
     },
     alternates: {
-      canonical: `https://krinalmehta.com/case-studies/${slug}/`,
+      canonical: `https://www.krinalmehta.com/case-studies/${slug}/`,
     },
   }
 }
@@ -149,15 +149,15 @@ export default async function CaseStudyPage({ params }: PageProps) {
               "description": study.description,
               "author": {
                 "@type": "Person",
-                "@id": "https://krinalmehta.com/#person",
+                "@id": "https://www.krinalmehta.com/#person",
                 "name": "Krinal Mehta"
               },
               "publisher": {
                 "@type": "Person",
                 "name": "Krinal Mehta",
-                "url": "https://krinalmehta.com"
+                "url": "https://www.krinalmehta.com"
               },
-              "mainEntityOfPage": `https://krinalmehta.com/case-studies/${slug}/`,
+              "mainEntityOfPage": `https://www.krinalmehta.com/case-studies/${slug}/`,
               "datePublished": "2025-01-01",
               "dateModified": "2026-01-25",
               "keywords": study.tags.join(", "),
@@ -170,8 +170,8 @@ export default async function CaseStudyPage({ params }: PageProps) {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://krinalmehta.com/case-studies/" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krinalmehta.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://www.krinalmehta.com/case-studies/" },
                 { "@type": "ListItem", "position": 3, "name": `${study.company}: ${study.title}` }
               ]
             }

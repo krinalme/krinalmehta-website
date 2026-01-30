@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Work',
   description: 'Building growth engines at Newfold Digital (Bluehost, HostGator, Yoast), FreshBooks, and more. Case studies and results from 17 years of scaling organic and paid acquisition.',
   alternates: {
-    canonical: 'https://krinalmehta.com/work/',
+    canonical: 'https://www.krinalmehta.com/work/',
   },
 }
 
@@ -242,7 +242,7 @@ export default function Work() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krinalmehta.com/" },
                 { "@type": "ListItem", "position": 2, "name": "Work" }
               ]
             }

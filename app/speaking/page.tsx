@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Speaking',
   description: 'Conference talks, webinars, podcasts, and teaching. Krinal Mehta speaks on SEO, growth strategy, AI in marketing, and building high-performing teams.',
   alternates: {
-    canonical: 'https://krinalmehta.com/speaking/',
+    canonical: 'https://www.krinalmehta.com/speaking/',
   },
 }
 
@@ -166,7 +166,7 @@ export default function Speaking() {
               "eventStatus": "https://schema.org/EventScheduled",
               "location": { "@type": "VirtualLocation", "url": "https://www.youtube.com/watch?v=Uk-3T_0pbl0" },
               "organizer": { "@type": "Organization", "name": "SEOTalk" },
-              "performer": { "@type": "Person", "@id": "https://krinalmehta.com/#person", "name": "Krinal Mehta" },
+              "performer": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person", "name": "Krinal Mehta" },
               "description": "Deep dive into how relevance engineering is changing the way we think about SEO strategy and content optimization.",
               "startDate": "2023-01-01"
             },
@@ -178,7 +178,7 @@ export default function Speaking() {
               "eventStatus": "https://schema.org/EventScheduled",
               "location": { "@type": "VirtualLocation", "url": "https://www.slideshare.net/slideshow/seo-audit-of-canderecom-krinal-mehta/113745405" },
               "organizer": { "@type": "Organization", "name": "SEMrush" },
-              "performer": { "@type": "Person", "@id": "https://krinalmehta.com/#person", "name": "Krinal Mehta" },
+              "performer": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person", "name": "Krinal Mehta" },
               "description": "Live SEO audit session alongside Jono Alderson (Yoast) and Nitin Manchanda (Trivago). Hosted by SEMrush India.",
               "startDate": "2019-01-01"
             },
@@ -190,7 +190,7 @@ export default function Speaking() {
               "eventStatus": "https://schema.org/EventScheduled",
               "location": { "@type": "VirtualLocation", "url": "https://www.youtube.com/watch?v=dYaJt9pApCA" },
               "organizer": { "@type": "Organization", "name": "SEOTalk" },
-              "performer": { "@type": "Person", "@id": "https://krinalmehta.com/#person", "name": "Krinal Mehta" },
+              "performer": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person", "name": "Krinal Mehta" },
               "description": "How to build and deploy custom GPTs to automate SEO tasks, from content briefs to technical audits.",
               "startDate": "2024-01-01"
             },
@@ -202,7 +202,7 @@ export default function Speaking() {
               "eventStatus": "https://schema.org/EventScheduled",
               "location": { "@type": "VirtualLocation", "url": "https://www.youtube.com/watch?v=9HJy_Mu97rI" },
               "organizer": { "@type": "Organization", "name": "Pathmonk" },
-              "performer": { "@type": "Person", "@id": "https://krinalmehta.com/#person", "name": "Krinal Mehta" },
+              "performer": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person", "name": "Krinal Mehta" },
               "description": "Discussion on building SEO programs for B2B SaaS companies, including FreshBooks' approach to content and international expansion.",
               "startDate": "2023-01-01"
             },
@@ -211,7 +211,7 @@ export default function Speaking() {
               "@type": "EducationEvent",
               "name": "Lead Instructor, Search Engine Marketing",
               "organizer": { "@type": "Organization", "name": "BrainStation", "url": "https://brainstation.io" },
-              "performer": { "@type": "Person", "@id": "https://krinalmehta.com/#person", "name": "Krinal Mehta" },
+              "performer": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person", "name": "Krinal Mehta" },
               "description": "Taught SEO, SEM, and Google Analytics courses to senior industry professionals transitioning into digital marketing.",
               "startDate": "2021-01-01",
               "endDate": "2022-12-31"
@@ -221,7 +221,7 @@ export default function Speaking() {
               "@type": "EducationEvent",
               "name": "SEO Trainer",
               "organizer": { "@type": "Organization", "name": "IAB Canada", "url": "https://iabcanada.com" },
-              "performer": { "@type": "Person", "@id": "https://krinalmehta.com/#person", "name": "Krinal Mehta" },
+              "performer": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person", "name": "Krinal Mehta" },
               "description": "Recognized as a SEM subject matter expert by the Interactive Advertising Bureau to train marketing leaders from Canada's top enterprise brands.",
               "startDate": "2020-01-01",
               "endDate": "2021-12-31"
@@ -267,7 +267,7 @@ export default function Speaking() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krinalmehta.com/" },
                 { "@type": "ListItem", "position": 2, "name": "Speaking & Media" }
               ]
             }

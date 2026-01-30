@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Krinal Mehta. Connect on LinkedIn or reach out via email.',
   alternates: {
-    canonical: 'https://krinalmehta.com/contact/',
+    canonical: 'https://www.krinalmehta.com/contact/',
   },
 }
 
@@ -109,7 +109,7 @@ export default function Contact() {
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "@id": "https://krinalmehta.com/#person",
+              "@id": "https://www.krinalmehta.com/#person",
               "name": "Krinal Mehta",
               "contactPoint": [
                 {
@@ -136,7 +136,7 @@ export default function Contact() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krinalmehta.com/" },
                 { "@type": "ListItem", "position": 2, "name": "Contact" }
               ]
             }

@@ -245,7 +245,7 @@ export default function Home() {
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "@id": "https://krinalmehta.com/#person",
+              "@id": "https://www.krinalmehta.com/#person",
               "name": "Krinal Mehta",
               "givenName": "Krinal",
               "familyName": "Mehta",
@@ -255,7 +255,7 @@ export default function Home() {
                 "name": "Newfold Digital",
                 "url": "https://newfold.com"
               },
-              "url": "https://krinalmehta.com",
+              "url": "https://www.krinalmehta.com",
               "sameAs": [
                 "https://www.linkedin.com/in/krinal",
                 "https://twitter.com/krinal",
@@ -272,7 +272,7 @@ export default function Home() {
                 "Content Strategy",
                 "Data Infrastructure"
               ],
-              "image": "https://krinalmehta.com/images/krinal-headshot.jpg",
+              "image": "https://www.krinalmehta.com/images/krinal-headshot.jpg",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Toronto",
@@ -342,14 +342,14 @@ export default function Home() {
               "@type": "Recommendation",
               "author": { "@type": "Person", "name": "Jeff McMahon", "jobTitle": "Director, Digital Performance", "worksFor": { "@type": "Organization", "name": "Docebo" } },
               "reviewBody": "Krinal was our go-to subject matter expert for all things SEO. His deep knowledge and strategic thinking helped scale our brand into new markets, including the UK, EU, AU, and ZA, delivering significant results. What truly sets Krinal apart is his passion and curiosity for SEO. It's more than just an occupation to him—it's a calling.",
-              "about": { "@type": "Person", "@id": "https://krinalmehta.com/#person" }
+              "about": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person" }
             },
             {
               "@context": "https://schema.org",
               "@type": "Recommendation",
               "author": { "@type": "Person", "name": "Reuben Alex", "jobTitle": "SEO/GEO Strategies" },
               "reviewBody": "Krinal and I worked very closely together for almost three years at FreshBooks. I admired his leadership and problem-solving skills. His understanding of search intent, recognizing it early through signs and signals, allowed him to do SEO with a strong strategic approach, consistently driving results.",
-              "about": { "@type": "Person", "@id": "https://krinalmehta.com/#person" }
+              "about": { "@type": "Person", "@id": "https://www.krinalmehta.com/#person" }
             }
           ])
         }}

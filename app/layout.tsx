@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     template: '%s — Krinal Mehta',
   },
   description: 'Full-stack growth operator building acquisition systems across organic, paid, and partnerships at multi-billion dollar scale. Director of SEO at Newfold Digital.',
-  metadataBase: new URL('https://krinalmehta.com'),
+  metadataBase: new URL('https://www.krinalmehta.com'),
   openGraph: {
     title: 'Krinal Mehta — Growth Leader',
     description: 'Full-stack growth operator building acquisition systems at multi-billion dollar scale.',
-    url: 'https://krinalmehta.com',
+    url: 'https://www.krinalmehta.com',
     siteName: 'Krinal Mehta',
     locale: 'en_US',
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://krinalmehta.com/',
+    canonical: 'https://www.krinalmehta.com/',
   },
 }
 
@@ -63,12 +63,12 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               "name": "Krinal Mehta",
-              "url": "https://krinalmehta.com",
+              "url": "https://www.krinalmehta.com",
               "description": "Full-stack growth operator building acquisition systems across organic, paid, and partnerships at multi-billion dollar scale.",
               "author": {
                 "@type": "Person",
                 "name": "Krinal Mehta",
-                "url": "https://krinalmehta.com"
+                "url": "https://www.krinalmehta.com"
               }
             })
           }}

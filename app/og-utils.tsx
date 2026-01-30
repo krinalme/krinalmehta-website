@@ -33,7 +33,7 @@ export function createOGImage({
         }}
       >
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <span style={{ fontSize: 18, opacity: 0.5 }}>krinalmehta.com</span>
+          <span style={{ fontSize: 18, opacity: 0.5 }}>www.krinalmehta.com</span>
           {tag && (
             <span
               style={{

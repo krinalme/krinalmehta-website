@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     lastName: 'Mehta',
   } as any,
   alternates: {
-    canonical: 'https://krinalmehta.com/about/',
+    canonical: 'https://www.krinalmehta.com/about/',
   },
 }
 
@@ -147,7 +147,7 @@ export default function About() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://krinalmehta.com/" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.krinalmehta.com/" },
                 { "@type": "ListItem", "position": 2, "name": "About" }
               ]
             },
