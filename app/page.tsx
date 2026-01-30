@@ -168,7 +168,7 @@ export default function Home() {
                 <p className="testimonial-quote">"Krinal was our go-to subject matter expert for all things SEO. His deep knowledge and strategic thinking helped scale our brand into new markets, including the UK, EU, AU, and ZA, delivering significant results. What truly sets Krinal apart is his passion and curiosity for SEO. It's more than just an occupation to him—it's a calling."</p>
                 <div className="testimonial-author">
                   <span className="testimonial-name">Jeff McMahon</span>
-                  <span className="testimonial-role">SaaS Marketing Leader, <a href="https://www.docebo.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>Docebo</a> · Managed Krinal at <a href="https://www.freshbooks.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>FreshBooks</a></span>
+                  <span className="testimonial-role">Director, Digital Performance, <a href="https://www.docebo.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>Docebo</a> · Managed Krinal at <a href="https://www.freshbooks.com" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textDecorationColor: 'rgba(255,255,255,0.4)', textUnderlineOffset: '3px' }}>FreshBooks</a></span>
                 </div>
               </div>
               <div className="testimonial-card">
