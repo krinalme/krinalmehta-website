@@ -13,13 +13,6 @@ export const metadata: Metadata = {
     description: 'Full-stack growth operator building acquisition systems at multi-billion dollar scale.',
     url: 'https://krinalmehta.com',
     siteName: 'Krinal Mehta',
-    images: [
-      {
-        url: '/images/krinal-headshot.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
     locale: 'en_US',
     type: 'website',
   },
