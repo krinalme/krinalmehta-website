@@ -1,5 +1,6 @@
 import { createOGImage, ogSize, ogContentType } from '@/app/og-utils'
 
+export const dynamic = 'force-static'
 export const alt = 'Contact Krinal Mehta'
 export const size = ogSize
 export const contentType = ogContentType
