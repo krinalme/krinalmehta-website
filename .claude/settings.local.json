@@ -4,7 +4,31 @@
       "Bash(node --version:*)",
       "Bash(npm --version:*)",
       "Bash(npm run dev:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd semantic internal links across all pages for SEO\n\n- Homepage: Link proof cards to case studies, hero meta to work/case studies\n- About: Link work mentions, $30M ARR to case study, speaking engagements\n- Work: Link metrics to case studies, add SEO governance case study link\n- Speaking: Link topics to relevant case studies\n- Contact: Add links to work history and case studies\n- Case Studies: Add CTA section with links to about/speaking/contact\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:youtu.be)",
+      "Bash(curl:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd missing external links on About page and update Jeff''s title on homepage\n\n- Link Search Results Media, Bluehost, HostGator, Yoast in career timeline\n- Link Government of Gujarat and GLS Leaf in Squid Sense entry and story\n- Link Ahmedabad, India to Wikipedia in story section\n- Update Jeff McMahon''s title to Director, Digital Performance on homepage\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd structured data schemas across all pages for SEO and AEO\n\nHomepage:\n- Enhanced Person schema with @id, address, expanded knowsAbout\n- Added VideoObject schema for 4 YouTube speaking videos\n- Added Recommendation schema for both testimonials\n\nCase Studies:\n- Added Article schema with datePublished, author, keywords, OG article type\n- Added BreadcrumbList schema for site hierarchy\n\nSpeaking:\n- Added Event schema for all 4 webinars/talks\n- Added EducationEvent schema for BrainStation and IAB Canada\n- Added BreadcrumbList schema\n\nContact:\n- Added ContactPoint schema for LinkedIn and email\n- Added BreadcrumbList schema\n\nAbout:\n- Set OG type to profile with first/last name\n- Added BreadcrumbList schema\n\nLayout:\n- Added WebSite schema \\(global\\)\n- Enhanced robots meta with maxSnippet, maxImagePreview, maxVideoPreview\n- Added canonical URL\n- Added dns-prefetch for YouTube thumbnails\n\nAll pages:\n- Added canonical URLs via alternates\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd remaining structured data schemas and update sitemap\n\nWork page:\n- Added OrganizationRole schema for career history with Organization entities\n- Added BreadcrumbList schema\n- Added canonical URL\n\nCase Studies index:\n- Added CollectionPage + ItemList schema listing all case studies\n- Added BreadcrumbList schema\n- Added canonical URL\n\nHomepage:\n- Added affiliation/alumniOf Organization schemas for key brands\n\nSpeaking:\n- Added VideoObject schema for 3 YouTube talk recordings\n\nAbout:\n- Added FAQPage schema for growth philosophy Q&A \\(3 questions\\)\n\nSitemap:\n- Updated lastmod dates to reflect today''s changes\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(tr:*)",
+      "Bash(python3:*)",
+      "Bash(git status:*)",
+      "Bash(git commit:*)",
+      "Bash(sips:*)",
+      "Bash(git checkout:*)",
+      "WebFetch(domain:pagespeed.web.dev)",
+      "Bash(npx lighthouse:*)",
+      "Bash(npx cwebp:*)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(node:*)",
+      "Bash(npx sharp-cli:*)",
+      "Bash(git rm:*)",
+      "Bash(du -sh:*)"
     ]
   }
 }
